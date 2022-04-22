@@ -82,7 +82,9 @@ body{
     font-size: 1.2em;
     
 }
-
+.bar--nav_list ul a:hover{
+    background-color: #f5caca;
+}
 /*
 @media only screen and (min-width: 767px) {
     .bar--nav { 
@@ -237,7 +239,11 @@ body{
     background-size: cover;
 }
 
-
+.item1:hover,.item2:hover,.item3:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    
+}
 
 
 /*-------------------Nosotros------------------------*/
@@ -338,7 +344,24 @@ body{
     padding-top: 6px;
     font-size: 20px;
 }
-
+.visitanos__box__redes__links--adjust--instagram:hover{
+    background-image: linear-gradient(to left, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);   -webkit-background-clip: text;
+    color: transparent ;
+    transform: scale(1.05);
+    transition: .4s;
+}
+.visitanos__box__redes__links--adjust--facebook:hover{
+    background-image: linear-gradient(to right,#3b5998,#8b9dc3,#dfe3ee);   -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.05);
+    transition: .4s;
+}
+.visitanos__box__redes__links--adjust--pinterest:hover{
+    background-image: linear-gradient(to right,#BD081C,#bd2436,#EFEFEF);   -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.05);
+    transition: .4s;
+}
 .visitanos__fisico{
     grid-area: visitanos__fisico;
     padding: 15px;
@@ -551,7 +574,9 @@ height: 40px;
             font-size: 17px;
             padding: 10px;
         }
-        
+        .bar--nav_list ul a:hover{
+            background-color: #f5caca;
+        }
 /*-----------------------baner-----------------------*/
         .baner{
         display: flex;
@@ -697,5 +722,13 @@ height: 40px;
   .fa-whatsapp {
     margin-top:13px;
   }
-
+.whatsapp{
+    animation-duration: 2s;
+    animation-name: desplazamiento;
+  }
+  
+  @keyframes desplazamiento {
+    from{ left: 0%;}
+    to{left: 93%;}
+  }
 }
