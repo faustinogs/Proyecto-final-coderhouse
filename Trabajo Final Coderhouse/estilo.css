@@ -82,10 +82,8 @@ body{
     font-size: 1.2em;
     
 }
-.bar--nav_list ul a:hover{
-    background-color: #f5caca;
-}
 
+/*
 @media only screen and (min-width: 767px) {
     .bar--nav { 
         grid-area: bar--nav; 
@@ -119,7 +117,7 @@ body{
         background-color: #f5caca;
     }
 }
-/*.bar--nav { 
+.bar--nav { 
     grid-area: bar--nav; 
     display: grid;
     grid-template-columns: .5fr 1fr ;
@@ -225,6 +223,7 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 .item2{
     grid-area: item2;
     background-image:url(img/IMG_20211127_162344218.jpg);
@@ -237,6 +236,9 @@ body{
     background-position: center;
     background-size: cover;
 }
+
+
+
 
 /*-------------------Nosotros------------------------*/
 .nosotros{
@@ -336,19 +338,7 @@ body{
     padding-top: 6px;
     font-size: 20px;
 }
-.visitanos__box__redes__links--adjust--instagram:hover{
-    background-image: linear-gradient(to left, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);   -webkit-background-clip: text;
-    color: transparent ;
-}
-.visitanos__box__redes__links--adjust--facebook:hover{
-    background-image: linear-gradient(to right,#3b5998,#8b9dc3,#dfe3ee);   -webkit-background-clip: text;
-    color: transparent;
-}
-.visitanos__box__redes__links--adjust--pinterest:hover{
-    background-image: linear-gradient(to right,#BD081C,#bd2436,#EFEFEF);   -webkit-background-clip: text;
-    color: transparent;
-    margin-right: 3px;
-}
+
 .visitanos__fisico{
     grid-area: visitanos__fisico;
     padding: 15px;
@@ -370,8 +360,8 @@ body{
     padding: 10px 20px;
     width: 100%;
     height: 100%;
-    background-color: #525252;
     color: white;
+    background-color: #525252;
     
 }
 .footer__text{
@@ -383,6 +373,7 @@ body{
 .container_gallery {  
     display: grid;
     width: 100%;
+    height: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: .1fr 0.6fr 1.3fr .4fr;
     gap: 0px 0px;
@@ -406,7 +397,11 @@ body{
     transition: .5s;
     border-radius: 2PX;
 }
+.grid__item__gallery:hover{
+    transform: scale(1.05);
+    transition: .5s;
 
+}
 .img1 {
     grid-column: 1 /3 ;
     grid-row: 1 / 2;
@@ -556,9 +551,7 @@ height: 40px;
             font-size: 17px;
             padding: 10px;
         }
-        .bar--nav_list ul a:hover{
-            background-color: #f5caca;
-        }
+        
 /*-----------------------baner-----------------------*/
         .baner{
         display: flex;
@@ -683,10 +676,26 @@ height: 40px;
     padding: 10px;
     color: #525252;
   }
-/*-------------gallery---------------------*/
-.grid__item__gallery:hover{
-    transform: scale(1.05);
-    transition: .5s;
 
-}
+/*-------------gallery---------------------*/
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    
+  }
+  
+  .fa-whatsapp {
+    margin-top:13px;
+  }
+
 }
