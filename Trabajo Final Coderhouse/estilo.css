@@ -48,7 +48,7 @@ body{
     grid-area: navbar;
 }
 .img--logo{
-    background-image: url(img/LOGO.png) !important;
+    background-image: url(img/logo-texto.png) !important;
 }
 /*-----------------baner-----------------------------*/
 .baner{
@@ -57,7 +57,7 @@ body{
     width: 100%;
     height:100%;
     justify-content: center;
-    background-image: url(img/IMG_20211127_172712928.jpg);
+    background-image: url(img/vidriera-navidad-0-portrait.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
@@ -112,6 +112,13 @@ body{
 }
 .carousel{
     grid-area: carousel;
+    width: 60%;
+    height: auto;
+    position:;
+}
+.carousel-index{
+    width:auto;
+    height: 100%;
 }
 
 
@@ -403,7 +410,7 @@ height: 40px;
     .container_index {  
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: .1fr 1fr .7fr .9fr 1.3fr .25fr;
+        grid-template-rows: .1fr .7fr .7fr .9fr .8fr .25fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -423,10 +430,10 @@ height: 40px;
         width: 100%;
         height:auto;
         justify-content: center;
-        background-image: url(img/IMG_20211127_172712928.jpg);
+        background-image: url(img/vidriera-navidad-1-landscape.jpg);
         background-attachment: fixed;
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
         align-content: center;
     }
     .baner--text{
@@ -462,18 +469,25 @@ height: 40px;
 /*-----------------------gallery----------------*/
 .GalleryPreview__grid{
     display: grid;
-    height: 400px;
-    grid-template-columns: 1fr ;
-    grid-template-rows:  0.2fr 1fr;
-    gap: 20px;
+    grid-template-columns: 0,2fr 1fr 0.2fr;
+    grid-template-rows:  0.2fr 1fr ;
+    gap: 1em;
     margin: 0 1em ;
     grid-template-areas:
-    " GalleryPreview__text "
-    " carousel  " 
+        "GalleryPreview__text GalleryPreview__text GalleryPreview__text"
+        "side1 carousel side2" 
     ;
 }
-.GalleryPreview__grid{
-    min-height: 350px;
+.side1{
+    grid-area: side1;
+    width: 15vh;
+}
+.side2{
+    grid-area: side2;
+    width: 15vh;
+}
+.carousel{
+    width: 100%;
 }
 .GalleryPreview__text{
     grid-area: GalleryPreview__text;
