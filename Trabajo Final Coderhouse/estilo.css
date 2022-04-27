@@ -17,7 +17,7 @@ body{
 .container_index {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .1fr .5fr .7fr .9fr 1.3fr .25fr;
+    grid-template-rows: .1fr .5fr .7fr .5fr 1.3fr .25fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -46,9 +46,6 @@ body{
 /*-------------------header-navbar------------------------*/
 .navbar{
     grid-area: navbar;
-}
-.img--logo{
-    background-image: url(img/logo-texto.png) !important;
 }
 /*-----------------baner-----------------------------*/
 .baner{
@@ -111,17 +108,14 @@ body{
     margin: -.1em 3em 20px ;
 }
 .carousel{
-    grid-area: carousel;
-    width: 60%;
-    height: auto;
-    position:;
+    
 }
-.carousel-index{
-    width:auto;
-    height: 100%;
+.side1{
+    display: none;
 }
-
-
+.side2{
+    display: none;
+}
 /*-------------------Nosotros------------------------*/
 .nosotros{
     grid-area: nosotros;
