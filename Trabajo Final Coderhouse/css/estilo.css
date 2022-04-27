@@ -7,6 +7,9 @@
     text-decoration: none
   
 }
+a{
+    text-decoration: none
+}
 html {
     scroll-behavior: smooth;
   }
@@ -50,9 +53,9 @@ body{
 /*-----------------baner-----------------------------*/
 .baner{
     display: flex;
-    margin-top: 1em;
+    margin-top: 1rem;
     width: 100%;
-    height:100%;
+    height:25rem;
     justify-content: center;
     background-image: url(../img/vidriera-navidad-0-portrait.jpg);
     background-attachment: fixed;
@@ -61,7 +64,7 @@ body{
 }
 .baner--text{
     text-transform: capitalize;
-    font-size: 1,5em;
+    font-size: 1,5rem;
     font-weight: 400;
     color: #525252;
     background-color: rgba(255, 255, 255, 0.438) ;
@@ -80,8 +83,7 @@ body{
     display: grid;
     grid-template-columns: 1fr ;
     grid-template-rows:  0.2fr 1fr ;
-    gap: 1em;
-    margin: 0 1em ;
+    margin: 0 1rem ;
     grid-template-areas:
         "GalleryPreview__text"
         "carousel" 
@@ -105,10 +107,9 @@ body{
     background-color: #525252;
     height: 1px;
     width: auto;
-    margin: -.1em 3em 20px ;
+    margin: -.15rem 3rem 1.25rem ;
 }
 .carousel{
-    
 }
 .side1{
     display: none;
@@ -141,13 +142,13 @@ body{
     background-color: #525252;
     height: 1px;
     width: auto;
-    margin: -.1em 3em 20px ;
+    margin: -.1rem 3rem 1.25rem ;
 }
 
 .nosotros__text__p{
     overflow: auto;
     text-align: center;
-    font-size: .8em;
+    font-size: .5rem;
     color: #525252;
 }
 
@@ -186,15 +187,15 @@ body{
 }
 .visitanos__text--underline--thiner{
     background-color: #525252;
-    height: 1px;
+    height: 0.0625rem;
     width: auto;
-    margin: -.1em 3em 20px ;
+    margin: -.15rem 3rem 1.25rem ;
 }
 .visitanos__redes{
     grid-area: visitanos__redes;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 0.625rem;
     color: #525252;
 
 }
@@ -202,17 +203,18 @@ body{
 .visitanos__box__redes__links--adjust--facebook,
 .visitanos__box__redes__links--adjust--pinterest{
     display: flex;
-    width: 220px;
-    height: 40px;
-    font-size: 40px ;
+    width: 13.75rem;
+    height: 2.5rem;
+    font-size: 2.5rem ;
     color:#525252;
     font-weight:bolder;
-    margin: 10px 0px;
+    margin: 0.625rem 0;
     transition: all .3s;
 }
 .redes__text--adjust{
-    padding-top: 6px;
-    font-size: 20px;
+    padding-top: 0.375rem;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 .visitanos__box__redes__links--adjust--instagram:hover{
     background-image: linear-gradient(to left, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);   -webkit-background-clip: text;
@@ -223,6 +225,7 @@ body{
 .visitanos__box__redes__links--adjust--facebook:hover{
     background-image: linear-gradient(to right,#3b5998,#8b9dc3,#dfe3ee);   -webkit-background-clip: text;
     color: transparent;
+    text-decoration: none;
     transform: scale(1.05);
     transition: .4s;
 }
@@ -234,15 +237,14 @@ body{
 }
 .visitanos__fisico{
     grid-area: visitanos__fisico;
-    padding: 15px;
+    padding: 0.9375rem;
     color: #525252;
-    font-size: 15px;
-    line-height:13px;
+    font-size: 0.7375rem;
 }
 .visitanos__fisico__mapa{
     grid-area: visitanos__fisico__mapa;
-    padding: 10px;
-    border: 10px solid black;
+    padding: 0.625rem;
+    border: 0.625rem solid black;
 }
 
 
@@ -268,14 +270,38 @@ body{
     width: 100%;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .1fr 0.6fr 1.3fr .4fr;
+    grid-template-rows: .1fr 0.3fr .3fr 1.3fr .4fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "bar--nav bar--nav bar--nav bar--nav"
+        "navbar navbar navbar navbar"
         "baner baner baner baner"
+        "texto--gallery texto--gallery texto--gallery texto--gallery"
         "grid__container__gallery grid__container__gallery grid__container__gallery grid__container__gallery"
         "footer footer footer footer";
+}
+.texto--gallery{
+    height: 8rem;
+    grid-area: texto--gallery;
+
+}
+.gallery__text{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400px; 
+    color: #525252e;
+}
+.gallery__text--underline{
+    background-color: #525252;
+    height: 3px;
+    width: auto;
+    margin: 1em 6em 0 ;
+}
+.gallery__text--underline--thiner{
+    background-color: #525252;
+    height: 0.0625rem;
+    width: auto;
+    margin: -.1rem 3rem 1.25rem ;
 }
 .grid__container__gallery{
     grid-area:grid__container__gallery;
@@ -298,63 +324,63 @@ body{
 .img1 {
     grid-column: 1 /3 ;
     grid-row: 1 / 2;
-    background-image: url(img/IMG_20211111_170916904.jpg);
+    background-image: url(../img/vidriera-naviadad-4-portrait.jpg);
     background-position:center;
     background-size: cover;
 }
 .img2{
     grid-column: 3/4;
     grid-row: 1/3;
-    background-image: url(img/imagen-1.jpg);
+    background-image: url(../img/vidriera-navidad-0-landscape.jpg);
     background-size: cover;
     background-position: 0;
 }
 .img3{
     grid-column: 1/2;
     grid-row: 2/4;
-    background-image: url(img/IMG_20211127_172734987.jpg);
+    background-image: url(../img/vidriera-navidad-0-portrait.jpg);
     background-position: center;
     background-size: cover;
 }
 .img4{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-image: url(img/IMG_20211111_170737667.jpg);
+    background-image: url(../img/vidriera-navidad-1-landscape.jpg);
     background-position: center;
     background-size: cover;
 }
 .img5{
     grid-column: 2/4;
     grid-row: 3/4;
-    background-image: url(img/IMG_20211127_162355406.jpg);
+    background-image: url(../img/vidriera-navidad-1-portrait.jpg);
     background-position: center;
     background-size: cover;
 }
 .img6{
     grid-column:1/3 ;
     grid-row:4/5 ;
-    background-image: url(img/IMG_20211127_172712928.jpg);
+    background-image: url(../img/vidriera-navidad-2-portrait.jpg);
     background-position: center;
     background-size: cover;
 }
 .img7{
     grid-column:3/4 ;
     grid-row:4/5 ;
-    background-image: url(img/IMG_20211127_180145047.jpg);
+    background-image: url(../img/vidriera-navidad-3-portrait.jpg);
     background-position: center;
     background-size: cover;
 }
 .img8{
     grid-column:1/2 ;
     grid-row: 5/7 ;
-    background-image: url(img/IMG_20211111_170338676.jpg);
+    background-image: url(../img/vidriera-naviadad-4-portrait.jpg);
     background-position: center;
     background-size: cover;
 }
 .img9{
     grid-column:2/4;
     grid-row:5/7;
-    background-image: url(img/IMG_20211127_180431239.jpg);
+    background-image: url(../img/vidriera-navidad-0-portrait.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -450,7 +476,7 @@ height: 40px;
         display: flex;
         padding: 70px 0px 60px;
         width: 100%;
-        height:auto;
+        height:100%;
         justify-content: center;
         background-image: url(../img/vidriera-navidad-1-landscape.jpg);
         background-attachment: fixed;
@@ -485,7 +511,7 @@ height: 40px;
 .nosotros__text__p{
     overflow: auto;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.4rem;
     color: #525252;
 }
 /*-----------------------gallery----------------*/
