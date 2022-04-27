@@ -363,6 +363,34 @@ body{
 
 
 /*-----------------formulario--------------------*/
+.formulario--grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 2fr .25fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "navbar"
+    "formulario--grid"
+    "footer"
+}
+.navbar{
+    grid-area: navbar;
+}
+.formulario--grid{
+    grid-area: formulario--grid;
+    height: 100vh;
+}
+.footer{
+    grid-area: footer;
+}
+.container--formulario{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
 .formulario{
     width: 40%;
     height: auto;
@@ -581,4 +609,13 @@ height: 40px;
     from{ left: 0%;}
     to{left: 93%;}
   }
+  /*-------------------formulario----------------------*/
+  .container--formulario{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: auto;
+}
 }
