@@ -54,7 +54,7 @@ body{
     width: 100%;
     height:100%;
     justify-content: center;
-    background-image: url(img/vidriera-navidad-0-portrait.jpg);
+    background-image: url(../img/vidriera-navidad-0-portrait.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
@@ -424,7 +424,7 @@ height: 40px;
         width: 100%;
         height:auto;
         justify-content: center;
-        background-image: url(img/vidriera-navidad-1-landscape.jpg);
+        background-image: url(../img/vidriera-navidad-1-landscape.jpg);
         background-attachment: fixed;
         background-size: cover;
         background-position: bottom;
@@ -473,10 +473,12 @@ height: 40px;
     ;
 }
 .side1{
+    display: block;
     grid-area: side1;
     width: 15vh;
 }
 .side2{
+    display: block;
     grid-area: side2;
     width: 15vh;
 }
