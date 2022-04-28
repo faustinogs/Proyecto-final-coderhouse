@@ -148,7 +148,7 @@ body{
 .nosotros__text__p{
     overflow: auto;
     text-align: center;
-    font-size: .5rem;
+    font-size: 1.5rem;
     color: #525252;
 }
 
@@ -265,12 +265,12 @@ body{
 
 
 /*----------------------------Galeria.html---------------------*/
-.container_gallery {  
+.container_gallery {
     display: grid;
     width: 100%;
-    height: auto;
+    height:100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .1fr 0.3fr .3fr 1.3fr .4fr;
+    grid-template-rows: .1fr 0.3fr .4fr 1.3fr .2fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -278,37 +278,38 @@ body{
         "baner baner baner baner"
         "texto--gallery texto--gallery texto--gallery texto--gallery"
         "grid__container__gallery grid__container__gallery grid__container__gallery grid__container__gallery"
-        "footer footer footer footer";
+        "footer footer footer footer"
+        ;
 }
 .texto--gallery{
-    height: 8rem;
     grid-area: texto--gallery;
-
+    padding-top: 7rem;
 }
 .gallery__text{
     text-align: center;
     font-size: 23px;
     font-weight: 400px; 
+    padding: 0 2rem;
     color: #525252e;
+    text-transform: capitalize;
 }
 .gallery__text--underline{
     background-color: #525252;
     height: 3px;
     width: auto;
-    margin: 1em 6em 0 ;
+    margin: .5em 6em 0 ;
 }
 .gallery__text--underline--thiner{
     background-color: #525252;
     height: 0.0625rem;
     width: auto;
-    margin: -.1rem 3rem 1.25rem ;
+    margin: -.15rem 3rem 1.25rem ;
 }
 .grid__container__gallery{
     grid-area:grid__container__gallery;
     display: grid;
     gap: .9em;
     margin: 2em 1em;
-    
 }
 .grid__item__gallery{
     min-height: 10em;
@@ -392,7 +393,7 @@ body{
 .formulario--grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr 2fr .25fr;
+    grid-template-rows: .1fr 1fr .25fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -412,10 +413,9 @@ body{
 }
 .container--formulario{
     width: 80%;
-    height: auto;
     margin-left: 10%;
     margin-right: 10%;
-    
+    padding-bottom: 10r;
 }
 .formulario{
     width: 40%;
@@ -607,6 +607,20 @@ height: 40px;
   }
 
 /*-------------gallery---------------------*/
+.container_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr 0.7fr .2fr 1.3fr .2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navbar navbar navbar navbar"
+        "baner baner baner baner"
+        "texto--gallery texto--gallery texto--gallery texto--gallery"
+        "grid__container__gallery grid__container__gallery grid__container__gallery grid__container__gallery"
+        "footer footer footer footer"
+        ;
+}
 
 .whatsapp {
     position:fixed;
