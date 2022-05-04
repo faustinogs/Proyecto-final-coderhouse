@@ -1,3 +1,12 @@
+$colortexto1: #525252;
+
+$colorredes1:transparent;
+
+$textsize:1.438rem;
+
+$backposit:center;
+
+$backsize:cover;
 *{
     margin: 0;
 	padding: 0;
@@ -7,6 +16,7 @@
     text-decoration: none
   
 }
+
 a{
     text-decoration: none
 }
@@ -63,7 +73,7 @@ body{
     text-transform: capitalize;
     font-size: 1,5rem;
     font-weight: 400;
-    color: #525252;
+    color: $colortexto1;
     background-color: rgba(255, 255, 255, 0.438) ;
     padding: 0.7em;
     margin-top: 6em;
@@ -108,18 +118,18 @@ body{
 .GalleryPreview__text{
     grid-area: GalleryPreview__text;
     text-align: center;
-    font-size: 23px;
+    font-size: $textsize;
     font-weight: 400px;
-    color: #525252e;
+    color: $colortexto1;
 }
 .GalleryPreview__text--underline{
-    background-color: #525252;
+    background-color: $colortexto1;
     height: 3px;
     width: auto;
     margin: 1em 6em 0 ;
 }
 .GalleryPreview__text--underline--thiner{
-    background-color: #525252;
+    background-color: $colortexto1;
     height: 1px;
     width: auto;
     margin: -.15rem 3rem 1.25rem ;
@@ -138,18 +148,18 @@ body{
 }
 .nosotros__text{
     text-align: center;
-    font-size: 23px;
+    font-size: $textsize;
     font-weight: 400px;
-    color: #525252e;
+    color: $colortexto1;
 }
 .nosotros__text--underline{
-    background-color: #525252;
+    background-color: $colortexto1;
     height: 3px;
     width: auto;
     margin: 1em 6em 0 ;
 }
 .nosotros__text--underline--thiner{
-    background-color: #525252;
+    background-color: $colortexto1;
     height: 1px;
     width: auto;
     margin: -.1rem 3rem 1.25rem ;
@@ -158,7 +168,7 @@ body{
     overflow: auto;
     text-align: center;
     font-size: 1.5rem;
-    color: #525252;
+    color: $colortexto1;
 }
 /*---------------------VISITANOS---------------------*/
 .visitanos{ 
@@ -181,18 +191,18 @@ body{
 .visitanos__text{
     grid-area: visitanos__texto;
     text-align: center;
-    font-size: 23px;
+    font-size: $textsize;
     font-weight: 400px; 
-    color: #525252e;
+    color: $colortexto1;
 }
 .visitanos__text--underline{
-    background-color: #525252;
+    background-color: $colortexto1;
     height: 3px;
     width: auto;
     margin: 1em 6em 0 ;
 }
 .visitanos__text--underline--thiner{
-    background-color: #525252;
+    background-color: $colortexto1;
     height: 0.0625rem;
     width: auto;
     margin: -.15rem 3rem 1.25rem ;
@@ -202,7 +212,7 @@ body{
     width: 100%;
     height: auto;
     padding: 0.625rem;
-    color: #525252;
+    color: $colortexto1;
 }
 .visitanos__box__redes__links--adjust--instagram,
 .visitanos__box__redes__links--adjust--facebook,
@@ -211,7 +221,7 @@ body{
     width: 13.75rem;
     height: 2.5rem;
     font-size: 2.5rem ;
-    color:#525252;
+    color:$colortexto1;
     font-weight:bolder;
     margin: 0.625rem 0;
     transition: all .3s;
@@ -223,26 +233,26 @@ body{
 }
 .visitanos__box__redes__links--adjust--instagram:hover{
     background-image: linear-gradient(to left, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);   -webkit-background-clip: text;
-    color: transparent ;
+    color: $colorredes1;
     transform: scale(1.05);
     transition: .4s;
 }
 .visitanos__box__redes__links--adjust--facebook:hover{
     background-image: linear-gradient(to right,#3b5998,#8b9dc3,#dfe3ee);   -webkit-background-clip: text;
-    color: transparent;
+    color: $colorredes1;
     transform: scale(1.05);
     transition: .4s;
 }
 .visitanos__box__redes__links--adjust--pinterest:hover{
     background-image: linear-gradient(to right,#BD081C,#bd2436,#EFEFEF);   -webkit-background-clip: text;
-    color: transparent;
+    color: $colorredes1;
     transform: scale(1.05);
     transition: .4s;
 }
 .visitanos__fisico{
     grid-area: visitanos__fisico;
     padding: 0.9375rem;
-    color: #525252;
+    color: $colortexto1;
     font-size: 0.7375rem;
 }
 .visitanos__fisico__mapa{
@@ -257,7 +267,7 @@ body{
     width: 100%;
     height: 100%;
     color: white;
-    background-color: #525252;
+    background-color: $colortexto1;
     
 }
 .footer__text{
@@ -286,20 +296,20 @@ body{
 }
 .gallery__text{
     text-align: center;
-    font-size: 23px;
+    font-size: $textsize;
     font-weight: 400px; 
     padding: 0 2rem;
-    color: #525252e;
+    color: $colortexto1;
     text-transform: capitalize;
 }
 .gallery__text--underline{
-    background-color: #525252;
+    background-color: $colortexto1;
     height: 3px;
     width: auto;
     margin: .5em 6em 0 ;
 }
 .gallery__text--underline--thiner{
-    background-color: #525252;
+    background-color: $colortexto1;
     height: 0.0625rem;
     width: auto;
     margin: -.15rem 3rem 1.25rem ;
@@ -325,64 +335,64 @@ body{
     grid-column: 1 /3 ;
     grid-row: 1 / 2;
     background-image: url(../img/vidriera-naviadad-4-portrait.jpg);
-    background-position:center;
-    background-size: cover;
+    background-position:$backposit;
+    background-size: $backsize;
 }
 .img2{
     grid-column: 3/4;
     grid-row: 1/3;
     background-image: url(../img/vidriera-navidad-0-landscape.jpg);
-    background-size: cover;
-    background-position: 0;
+    background-size: $backsize;
+    background-position:$backposit;
 }
 .img3{
     grid-column: 1/2;
     grid-row: 2/4;
     background-image: url(../img/vidriera-navidad-0-portrait.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: $backposit;
+    background-size: $backsize;
 }
 .img4{
     grid-column: 2/3;
     grid-row: 2/3;
     background-image: url(../img/vidriera-navidad-1-landscape.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: $backposit;
+    background-size: $backsize;
 }
 .img5{
     grid-column: 2/4;
     grid-row: 3/4;
     background-image: url(../img/vidriera-navidad-1-portrait.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: $backposit;
+    background-size: $backsize;
 }
 .img6{
     grid-column:1/3 ;
     grid-row:4/5 ;
     background-image: url(../img/vidriera-navidad-2-portrait.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: $backposit;
+    background-size: $backsize;
 }
 .img7{
     grid-column:3/4 ;
     grid-row:4/5 ;
     background-image: url(../img/vidriera-navidad-3-portrait.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: $backposit;
+    background-size: $backsize;
 }
 .img8{
     grid-column:1/2 ;
     grid-row: 5/7 ;
     background-image: url(../img/vidriera-naviadad-4-portrait.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: $backposit;
+    background-size: $backsize;
 }
 .img9{
     grid-column:2/4;
     grid-row:5/7;
     background-image: url(../img/vidriera-navidad-0-portrait.jpg);
-    background-position: center;
-    background-size: cover;
+    background-position: $backposit;
+    background-size: $backsize;
 }
 /*---------------------FORMULARIO---------------------*/
 .formulario--grid{
@@ -437,7 +447,7 @@ body{
             text-transform: capitalize;
             font-size: 30px;
             font-weight: 400;
-            color: #525252;
+            color: $colortexto1;
             background-color: rgba(255, 255, 255, 0.438) ;
             background-blend-mode: lighten;
             padding: 15px 25px;
@@ -445,13 +455,13 @@ body{
         }
         /*---------------------NOSOTROS-DESKTOP---------------------*/
         .nosotros__text--underline{
-            background-color: #525252;
+            background-color: $colortexto1;
             height: 3px;
             width: auto;
             margin: 5px 450px 0 ;
         }
         .nosotros__text--underline--thiner{
-            background-color: #525252;
+            background-color: $colortexto1;
             height: 1px;
             width: auto;
             margin: -2px 260px 20px ;
@@ -460,7 +470,7 @@ body{
             overflow: auto;
             text-align: center;
             font-size: 1.4rem;
-            color: #525252;
+            color: $colortexto1;
         }
         /*---------------------GALLERY-PREVIEW-DESKTOP---------------------*/
         .GalleryPreview__grid{
@@ -475,18 +485,19 @@ body{
         .GalleryPreview__text{
             grid-area: GalleryPreview__text;
             text-align: center;
-            font-size: 23px;
+            font-size: $textsize;
             font-weight: 400px;
-            color: #525252e;
+            color: $colortexto1
+            ;
         }
         .GalleryPreview__text--underline{
-            background-color: #525252;
+            background-color: $colortexto1;
             height: 3px;
             width: auto;
             margin: 5px 450px 0 ;
         }
         .GalleryPreview__text--underline--thiner{
-            background-color: #525252;
+            background-color: $colortexto1;
             height: 1px;
             width: auto;
             margin: -2px 260px 0 ;
@@ -519,18 +530,18 @@ body{
         .visitanos__text{
             grid-area: visitanos__texto;
             text-align: center;
-            font-size: 23px;
+            font-size: $textsize;
             font-weight: 400px;
-            color: #525252e;
+            color: $colortexto1;
         }
         .visitanos__text--underline{
-            background-color: #525252;
+            background-color: $colortexto1;
             height: 3px;
             width: auto;
             margin: 5px 450px 0 ;
         }
         .visitanos__text--underline--thiner{
-            background-color: #525252;
+            background-color: $colortexto1;
             height: 1px;
             width: auto;
             margin: -2px 260px 30px ;
@@ -540,7 +551,7 @@ body{
             width: 100%;
             height: auto;
             padding: 10px;
-            color: #525252;
+            color: $colortexto1;
         }
         /*---------------------GALERIA-DESKTOP---------------------*/
         .grid__container__gallery{
@@ -556,4 +567,3 @@ body{
             margin-bottom: auto;
         }
     }
-
