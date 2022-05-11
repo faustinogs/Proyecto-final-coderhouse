@@ -102,6 +102,7 @@ body {
   font-weight: 400;
   color: #525252;
   background-color: rgba(255, 255, 255, 0.438);
+  border-radius: .2rem;
   padding: 0.7em;
   margin-top: 6em;
 }
@@ -367,7 +368,7 @@ body {
   grid-area: footer;
   padding: 10px 20px;
   width: 100%;
-  height: 100%;
+  height: 10rem;
   color: white;
   background-color: #525252;
 }
@@ -377,24 +378,7 @@ body {
 }
 
 /*---------------------GALLERIA.HTML---------------------*/
-.container_gallery {
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  height: 100%;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: .1fr 0.3fr .4fr 1.3fr .2fr;
-      grid-template-rows: .1fr 0.3fr .4fr 1.3fr .2fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-      grid-template-areas: "navbar navbar navbar navbar" "baner baner baner baner" "texto--gallery texto--gallery texto--gallery texto--gallery" "grid__container__gallery grid__container__gallery grid__container__gallery grid__container__gallery" "footer footer footer footer";
-}
-
 .texto--gallery {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: texto--gallery;
   padding-top: 7rem;
 }
@@ -423,9 +407,6 @@ body {
 }
 
 .grid__container__gallery {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: grid__container__gallery;
   display: -ms-grid;
   display: grid;
@@ -438,7 +419,7 @@ body {
   width: auto;
   -webkit-transition: .5s;
   transition: .5s;
-  border-radius: 2PX;
+  border-radius: 0.4rem;
 }
 
 .grid__item__gallery:hover {
@@ -560,7 +541,7 @@ body {
 .formulario--grid {
   display: -ms-grid;
   display: grid;
-  Height: 100vh;
+  height: 100vh;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: .1fr 1fr .25fr;
@@ -737,7 +718,7 @@ body {
   }
   /*---------------------GALERIA-DESKTOP---------------------*/
   .grid__container__gallery {
-    margin: 0 5%;
+    margin: 2rem 5%;
   }
   /*---------------------FORMULARIO-DESKTOP---------------------*/
   .container--formulario {
