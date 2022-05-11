@@ -7,14 +7,34 @@ $textsize:1.438rem;
 $backposit:center;
 
 $backsize:cover;
+
+$font-style:("estilo1": arial, "estilo2":'karla',"estilo3": sans-serif);
+
+@mixin underlined-text{
+    text-align: center;
+    font-size: $textsize;
+    font-weight: 400px;
+    color: $colortexto1;
+}
+@mixin underline{
+    background-color: $colortexto1;
+    height: 3px;
+    width: auto;
+    margin: 1em 6em 0 ;
+}
+@mixin underline-thiner{
+    background-color: $colortexto1;
+    height: 1px;
+    width: auto;
+    margin: -.1rem 3rem 1.25rem ;
+}
 *{
     margin: 0;
 	padding: 0;
     box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
+    font-family: map-get($font-style,"estilo2");
     list-style: none;
     text-decoration: none
-  
 }
 
 a{
@@ -117,22 +137,13 @@ body{
 }
 .GalleryPreview__text{
     grid-area: GalleryPreview__text;
-    text-align: center;
-    font-size: $textsize;
-    font-weight: 400px;
-    color: $colortexto1;
+    @include underlined-text;
 }
 .GalleryPreview__text--underline{
-    background-color: $colortexto1;
-    height: 3px;
-    width: auto;
-    margin: 1em 6em 0 ;
-}
+    @include uderline;
+} 
 .GalleryPreview__text--underline--thiner{
-    background-color: $colortexto1;
-    height: 1px;
-    width: auto;
-    margin: -.15rem 3rem 1.25rem ;
+    @include underline-thiner;
 }
 .container__carousel{
     grid-area: carousel;
@@ -147,22 +158,13 @@ body{
     padding: 60px 20px 20px 20px; 
 }
 .nosotros__text{
-    text-align: center;
-    font-size: $textsize;
-    font-weight: 400px;
-    color: $colortexto1;
+    @include underlined-text;
 }
 .nosotros__text--underline{
-    background-color: $colortexto1;
-    height: 3px;
-    width: auto;
-    margin: 1em 6em 0 ;
+    @include uderline;
 }
 .nosotros__text--underline--thiner{
-    background-color: $colortexto1;
-    height: 1px;
-    width: auto;
-    margin: -.1rem 3rem 1.25rem ;
+    @include underline-thiner;
 }
 .nosotros__text__p{
     overflow: auto;
@@ -190,22 +192,13 @@ body{
 }
 .visitanos__text{
     grid-area: visitanos__texto;
-    text-align: center;
-    font-size: $textsize;
-    font-weight: 400px; 
-    color: $colortexto1;
+    @include underlined-text;
 }
 .visitanos__text--underline{
-    background-color: $colortexto1;
-    height: 3px;
-    width: auto;
-    margin: 1em 6em 0 ;
+    @include uderline;
 }
 .visitanos__text--underline--thiner{
-    background-color: $colortexto1;
-    height: 0.0625rem;
-    width: auto;
-    margin: -.15rem 3rem 1.25rem ;
+    @include underline-thiner;
 }
 .visitanos__redes{
     grid-area: visitanos__redes;
@@ -267,11 +260,13 @@ body{
     width: 100%;
     height: 10rem;
     color: white;
+    
     background-color: $colortexto1;
     
 }
 .footer__text{
- text-transform: capitalize;
+    font-family: map-get($font-style,"estilo1");
+    text-transform: capitalize;
 }
 /*---------------------GALLERIA.HTML---------------------*/
 .texto--gallery{
@@ -279,24 +274,13 @@ body{
     padding-top: 7rem;
 }
 .gallery__text{
-    text-align: center;
-    font-size: $textsize;
-    font-weight: 400px; 
-    padding: 0 2rem;
-    color: $colortexto1;
-    text-transform: capitalize;
+    @include underlined-text;
 }
 .gallery__text--underline{
-    background-color: $colortexto1;
-    height: 3px;
-    width: auto;
-    margin: .5em 6em 0 ;
+    @include uderline;
 }
 .gallery__text--underline--thiner{
-    background-color: $colortexto1;
-    height: 0.0625rem;
-    width: auto;
-    margin: -.15rem 3rem 1.25rem ;
+    @include underline-thiner;
 }
 .grid__container__gallery{
     grid-area:grid__container__gallery;
@@ -311,9 +295,8 @@ body{
     border-radius: 0.4rem;
 }
 .grid__item__gallery:hover{
+    @extend .grid__item__gallery;
     transform: scale(1.05);
-    transition: .5s;
-
 }
 .img1 {
     grid-column: 1 /3 ;
@@ -397,6 +380,9 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 10r;
+}
+.container--formilario--text{
+    font-family: map-get($font-style,"estilo3");
 }
 /*---------------------MEDIA-DESKTOP---------------------*/
 @media only screen and (min-width: 767px) {
@@ -493,6 +479,7 @@ body{
         .carousel-inner{
             height: 25rem;
         }
+        
         /*---------------------VISITANOS-DESKTOP---------------------*/
         .visitanos{ 
             grid-area: visitanos; 

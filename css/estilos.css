@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Karla', sans-serif;
+  font-family: "karla";
   list-style: none;
   text-decoration: none;
 }
@@ -168,24 +168,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: GalleryPreview__text;
-  text-align: center;
-  font-size: 1.438rem;
-  font-weight: 400px;
-  color: #525252;
-}
-
-.GalleryPreview__text--underline {
-  background-color: #525252;
-  height: 3px;
-  width: auto;
-  margin: 1em 6em 0;
-}
-
-.GalleryPreview__text--underline--thiner {
-  background-color: #525252;
-  height: 1px;
-  width: auto;
-  margin: -.15rem 3rem 1.25rem;
 }
 
 .container__carousel {
@@ -207,21 +189,21 @@ body {
   padding: 60px 20px 20px 20px;
 }
 
-.nosotros__text {
+.nosotros__text, .GalleryPreview__text, .visitanos__text, .gallery__text {
   text-align: center;
   font-size: 1.438rem;
   font-weight: 400px;
   color: #525252;
 }
 
-.nosotros__text--underline {
+.nosotros__text--underline, .GalleryPreview__text--underline, .visitanos__text--underline, .gallery__text--underline {
   background-color: #525252;
   height: 3px;
   width: auto;
   margin: 1em 6em 0;
 }
 
-.nosotros__text--underline--thiner {
+.nosotros__text--underline--thiner, .GalleryPreview__text--underline--thiner, .visitanos__text--underline--thiner, .gallery__text--underline--thiner {
   background-color: #525252;
   height: 1px;
   width: auto;
@@ -259,24 +241,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: visitanos__texto;
-  text-align: center;
-  font-size: 1.438rem;
-  font-weight: 400px;
-  color: #525252;
-}
-
-.visitanos__text--underline {
-  background-color: #525252;
-  height: 3px;
-  width: auto;
-  margin: 1em 6em 0;
-}
-
-.visitanos__text--underline--thiner {
-  background-color: #525252;
-  height: 0.0625rem;
-  width: auto;
-  margin: -.15rem 3rem 1.25rem;
 }
 
 .visitanos__redes {
@@ -374,6 +338,7 @@ body {
 }
 
 .footer__text {
+  font-family: arial;
   text-transform: capitalize;
 }
 
@@ -381,29 +346,6 @@ body {
 .texto--gallery {
   grid-area: texto--gallery;
   padding-top: 7rem;
-}
-
-.gallery__text {
-  text-align: center;
-  font-size: 1.438rem;
-  font-weight: 400px;
-  padding: 0 2rem;
-  color: #525252;
-  text-transform: capitalize;
-}
-
-.gallery__text--underline {
-  background-color: #525252;
-  height: 3px;
-  width: auto;
-  margin: .5em 6em 0;
-}
-
-.gallery__text--underline--thiner {
-  background-color: #525252;
-  height: 0.0625rem;
-  width: auto;
-  margin: -.15rem 3rem 1.25rem;
 }
 
 .grid__container__gallery {
@@ -561,6 +503,10 @@ body {
   padding-bottom: 10r;
 }
 
+.container--formilario--text {
+  font-family: sans-serif;
+}
+
 /*---------------------MEDIA-DESKTOP---------------------*/
 @media only screen and (min-width: 767px) {
   .container_index {
@@ -603,13 +549,13 @@ body {
     margin-top: 80px;
   }
   /*---------------------NOSOTROS-DESKTOP---------------------*/
-  .nosotros__text--underline {
+  .nosotros__text--underline, .GalleryPreview__text--underline, .visitanos__text--underline, .gallery__text--underline {
     background-color: #525252;
     height: 3px;
     width: auto;
     margin: 5px 450px 0;
   }
-  .nosotros__text--underline--thiner {
+  .nosotros__text--underline--thiner, .GalleryPreview__text--underline--thiner, .visitanos__text--underline--thiner, .gallery__text--underline--thiner {
     background-color: #525252;
     height: 1px;
     width: auto;
