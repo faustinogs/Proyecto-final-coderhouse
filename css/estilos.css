@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+.h1s {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -168,6 +172,24 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: GalleryPreview__text;
+  text-align: center;
+  font-size: 1.438rem;
+  font-weight: 400px;
+  color: #525252;
+}
+
+.GalleryPreview__text--underline {
+  background-color: #525252;
+  height: 3px;
+  width: auto;
+  margin: 1em 6em 0;
+}
+
+.GalleryPreview__text--underline--thiner {
+  background-color: #525252;
+  height: 1px;
+  width: auto;
+  margin: -.1rem 3rem 1.25rem;
 }
 
 .container__carousel {
@@ -189,21 +211,21 @@ body {
   padding: 60px 20px 20px 20px;
 }
 
-.nosotros__text, .GalleryPreview__text, .visitanos__text, .gallery__text {
+.nosotros__text {
   text-align: center;
   font-size: 1.438rem;
   font-weight: 400px;
   color: #525252;
 }
 
-.nosotros__text--underline, .GalleryPreview__text--underline, .visitanos__text--underline, .gallery__text--underline {
+.nosotros__text--underline {
   background-color: #525252;
   height: 3px;
   width: auto;
   margin: 1em 6em 0;
 }
 
-.nosotros__text--underline--thiner, .GalleryPreview__text--underline--thiner, .visitanos__text--underline--thiner, .gallery__text--underline--thiner {
+.nosotros__text--underline--thiner {
   background-color: #525252;
   height: 1px;
   width: auto;
@@ -241,6 +263,24 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: visitanos__texto;
+  text-align: center;
+  font-size: 1.438rem;
+  font-weight: 400px;
+  color: #525252;
+}
+
+.visitanos__text--underline {
+  background-color: #525252;
+  height: 3px;
+  width: auto;
+  margin: 1em 6em 0;
+}
+
+.visitanos__text--underline--thiner {
+  background-color: #525252;
+  height: 1px;
+  width: auto;
+  margin: -.1rem 3rem 1.25rem;
 }
 
 .visitanos__redes {
@@ -330,7 +370,7 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
-  padding: 10px 20px;
+  padding: 1rem 3rem;
   width: 100%;
   height: 10rem;
   color: white;
@@ -348,6 +388,27 @@ body {
   padding-top: 7rem;
 }
 
+.gallery__text {
+  text-align: center;
+  font-size: 1.438rem;
+  font-weight: 400px;
+  color: #525252;
+}
+
+.gallery__text--underline {
+  background-color: #525252;
+  height: 3px;
+  width: auto;
+  margin: 1em 6em 0;
+}
+
+.gallery__text--underline--thiner {
+  background-color: #525252;
+  height: 1px;
+  width: auto;
+  margin: -.1rem 3rem 1.25rem;
+}
+
 .grid__container__gallery {
   grid-area: grid__container__gallery;
   display: -ms-grid;
@@ -356,7 +417,7 @@ body {
   margin: 2em 1em;
 }
 
-.grid__item__gallery {
+.grid__item__gallery, .grid__item__gallery:hover {
   min-height: 10em;
   width: auto;
   -webkit-transition: .5s;
@@ -367,8 +428,6 @@ body {
 .grid__item__gallery:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .img1 {
@@ -527,7 +586,7 @@ body {
     display: flex;
     padding: 60px 0px 60px;
     width: 100%;
-    height: 100%;
+    height: 23rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -549,13 +608,13 @@ body {
     margin-top: 80px;
   }
   /*---------------------NOSOTROS-DESKTOP---------------------*/
-  .nosotros__text--underline, .GalleryPreview__text--underline, .visitanos__text--underline, .gallery__text--underline {
+  .nosotros__text--underline {
     background-color: #525252;
     height: 3px;
     width: auto;
     margin: 5px 450px 0;
   }
-  .nosotros__text--underline--thiner, .GalleryPreview__text--underline--thiner, .visitanos__text--underline--thiner, .gallery__text--underline--thiner {
+  .nosotros__text--underline--thiner {
     background-color: #525252;
     height: 1px;
     width: auto;
@@ -566,6 +625,7 @@ body {
     text-align: center;
     font-size: 1.4rem;
     color: #525252;
+    padding: 0 3rem;
   }
   /*---------------------GALLERY-PREVIEW-DESKTOP---------------------*/
   .GalleryPreview__grid {
@@ -619,7 +679,7 @@ body {
     margin-top: 50px;
     margin-bottom: 100px;
     height: 30em;
-    padding: 10px;
+    padding: 0 3rem;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;

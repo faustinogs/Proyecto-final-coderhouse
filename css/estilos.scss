@@ -16,7 +16,7 @@ $font-style:("estilo1": arial, "estilo2":'karla',"estilo3": sans-serif);
     font-weight: 400px;
     color: $colortexto1;
 }
-@mixin underline{
+@mixin underline-1{
     background-color: $colortexto1;
     height: 3px;
     width: auto;
@@ -36,7 +36,9 @@ $font-style:("estilo1": arial, "estilo2":'karla',"estilo3": sans-serif);
     list-style: none;
     text-decoration: none
 }
-
+.h1s{
+    display: none;
+}
 a{
     text-decoration: none
 }
@@ -140,7 +142,7 @@ body{
     @include underlined-text;
 }
 .GalleryPreview__text--underline{
-    @include uderline;
+    @include underline-1;
 } 
 .GalleryPreview__text--underline--thiner{
     @include underline-thiner;
@@ -161,7 +163,7 @@ body{
     @include underlined-text;
 }
 .nosotros__text--underline{
-    @include uderline;
+    @include underline-1;
 }
 .nosotros__text--underline--thiner{
     @include underline-thiner;
@@ -195,7 +197,7 @@ body{
     @include underlined-text;
 }
 .visitanos__text--underline{
-    @include uderline;
+    @include underline-1;
 }
 .visitanos__text--underline--thiner{
     @include underline-thiner;
@@ -256,13 +258,11 @@ body{
 /*---------------------FOOTER---------------------*/
 .footer{
     grid-area: footer;
-    padding: 10px 20px;
+    padding: 1rem 3rem;
     width: 100%;
     height: 10rem;
     color: white;
-    
     background-color: $colortexto1;
-    
 }
 .footer__text{
     font-family: map-get($font-style,"estilo1");
@@ -277,7 +277,7 @@ body{
     @include underlined-text;
 }
 .gallery__text--underline{
-    @include uderline;
+    @include underline-1;
 }
 .gallery__text--underline--thiner{
     @include underline-thiner;
@@ -405,7 +405,7 @@ body{
             display: flex;
             padding: 60px 0px 60px;
             width: 100%;
-            height:100%;
+            height:23rem;
             justify-content: center;
             background-image: url(../img/vidriera-navidad-1-landscape.jpg);
             background-attachment: fixed;
@@ -441,6 +441,7 @@ body{
             text-align: center;
             font-size: 1.4rem;
             color: $colortexto1;
+            padding: 0 3rem;
         }
         /*---------------------GALLERY-PREVIEW-DESKTOP---------------------*/
         .GalleryPreview__grid{
@@ -486,7 +487,7 @@ body{
             margin-top: 50px;
             margin-bottom: 100px;
             height: 30em;
-            padding: 10px;
+            padding: 0 3rem;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 0.1fr 0.2fr 1fr ;
