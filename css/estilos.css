@@ -21,7 +21,10 @@ html {
 }
 
 body {
-  background-color: white;
+  background-image: url(../img/layered-waves-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
 }
 
 .container_index {
@@ -374,11 +377,11 @@ body {
   width: 100%;
   height: 10rem;
   color: white;
-  background-color: #525252;
+  background-color: transparent;
 }
 
 .footer__text {
-  font-family: arial;
+  font-family: "Open Sans";
   text-transform: capitalize;
 }
 
@@ -560,10 +563,6 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   padding-bottom: 10r;
-}
-
-.container--formilario--text {
-  font-family: sans-serif;
 }
 
 /*---------------------MEDIA-DESKTOP---------------------*/
