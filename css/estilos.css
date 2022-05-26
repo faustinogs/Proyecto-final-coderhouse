@@ -21,10 +21,7 @@ html {
 }
 
 body {
-  background-image: url(../img/layered-waves-haikei.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+  background-color: white;
 }
 
 .container_index {
@@ -32,8 +29,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: .1fr .5fr .7fr .5fr 1.3fr .25fr;
-      grid-template-rows: .1fr .5fr .7fr .5fr 1.3fr .25fr;
+  -ms-grid-rows: .1fr .5fr .7fr .5fr 1.3fr .3fr;
+      grid-template-rows: .1fr .5fr .7fr .5fr 1.3fr .3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
       grid-template-areas: "navbar navbar navbar navbar" "baner baner baner baner" "nosotros nosotros nosotros nosotros" "gallery-preview gallery-preview gallery-preview gallery-preview" "visitanos visitanos visitanos visitanos" "footer footer footer footer";
@@ -74,10 +71,17 @@ body {
 }
 
 /* ---------------------NAVBAR--------------------- */
-.navbar {
+.navhead {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: navbar;
+  height: 7rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-collapse {
@@ -375,9 +379,9 @@ body {
   grid-area: footer;
   padding: 1rem 3rem;
   width: 100%;
-  height: 10rem;
+  height: 18rem;
   color: white;
-  background-color: transparent;
+  background-color: #525252;
 }
 
 .footer__text {
@@ -562,7 +566,7 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 10r;
+  padding-bottom: 10rem;
 }
 
 /*---------------------MEDIA-DESKTOP---------------------*/
@@ -621,7 +625,7 @@ body {
   }
   .nosotros__text__p {
     overflow: auto;
-    text-align: center;
+    text-align: justify;
     font-size: 1.4rem;
     color: #525252;
     padding: 0 3rem;
@@ -720,6 +724,67 @@ body {
     height: auto;
     padding: 10px;
     color: #525252;
+  }
+  /*---------------------FOOTER-DESKTOP---------------------*/
+  .footer {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: footer;
+    display: -ms-grid;
+    display: grid;
+  }
+  .objetivo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .objetivo-title {
+    border-left: 0.2rem solid white;
+    padding-left: .7rem;
+  }
+  .objetivo-text {
+    font-family: arial;
+    font-size: 1rem;
+    padding-left: .8rem;
+    line-height: 1.5rem;
+  }
+  .seguinos {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .derechos {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .red-footer {
+    padding: .5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+  }
+  .seguinos-text {
+    font-family: arial;
+    font-size: 1.7rem;
+    border-left: 0.2rem solid white;
+    padding-left: .7rem;
+  }
+  .seguinos-redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 1rem;
   }
   /*---------------------GALERIA-DESKTOP---------------------*/
   .grid__container__gallery {
