@@ -377,11 +377,11 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
-  padding: 1rem 3rem;
   width: 100%;
-  height: 18rem;
+  height: 24rem;
   color: white;
   background-color: #525252;
+  padding: 0;
 }
 
 .footer__text {
@@ -389,7 +389,82 @@ body {
   text-transform: capitalize;
 }
 
+.objetivo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 2rem 1rem 1rem;
+}
+
+.objetivo-title {
+  font-family: arial;
+  font-size: 1.2rem;
+  border-left: 0.2rem solid white;
+  padding-left: .7rem;
+}
+
+.objetivo-text {
+  font-family: arial;
+  font-size: 1rem;
+  padding-left: .8rem;
+  line-height: 1.5rem;
+}
+
+.seguinos {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding: 1rem 1rem;
+}
+
+.derechos {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-color: #3d3d3d;
+  min-height: 4rem;
+}
+
+.derechos-text {
+  padding-top: 1.3rem;
+  padding-left: 1.3rem;
+}
+
+.red-footer {
+  padding: .5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.seguinos-text {
+  font-family: arial;
+  font-size: 1.2rem;
+  border-left: 0.2rem solid white;
+  padding-left: .7rem;
+}
+
+.seguinos-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 1rem;
+}
+
 /*---------------------GALLERIA.HTML---------------------*/
+.nav-galeria {
+  margin-top: -1rem;
+}
+
 .texto--gallery {
   grid-area: texto--gallery;
   padding-top: 7rem;
@@ -417,7 +492,6 @@ body {
 }
 
 .grid__container__gallery {
-  grid-area: grid__container__gallery;
   display: -ms-grid;
   display: grid;
   gap: .9em;
@@ -564,6 +638,7 @@ body {
   -ms-grid-column: 1;
   grid-area: formulario--grid;
   width: 80%;
+  padding-top: 8rem;
   margin-left: 10%;
   margin-right: 10%;
   padding-bottom: 10rem;
@@ -571,6 +646,15 @@ body {
 
 /*---------------------MEDIA-DESKTOP---------------------*/
 @media only screen and (min-width: 767px) {
+  .container__index {
+    width: 100%;
+  }
+  .container--formulario {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 920px) {
   .container_index {
     display: -ms-grid;
     display: grid;
@@ -733,6 +817,8 @@ body {
     grid-area: footer;
     display: -ms-grid;
     display: grid;
+    padding: 0;
+    height: 18rem;
   }
   .objetivo {
     -ms-grid-column: 1;
@@ -741,16 +827,23 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    padding: 3rem 3rem;
   }
   .objetivo-title {
+    font-family: arial;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -1px;
     border-left: 0.2rem solid white;
     padding-left: .7rem;
   }
   .objetivo-text {
-    font-family: arial;
+    font-family: "karla";
     font-size: 1rem;
+    font-weight: 400;
     padding-left: .8rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
+    letter-spacing: -1px;
   }
   .seguinos {
     -ms-grid-column: 2;
@@ -759,14 +852,24 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    padding: 3rem 3rem;
   }
   .derechos {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    grid-row: 1/2;
+    grid-row: 2/3;
+    min-height: 3.5rem;
+    background-color: #3d3d3d;
+  }
+  .derechos-text {
+    font-family: arial;
+    font-size: .8rem;
+    padding-left: 3rem;
+    padding-top: 1.2rem;
+    line-height: 1.1rem;
   }
   .red-footer {
     padding: .5rem;
@@ -792,11 +895,10 @@ body {
   }
   /*---------------------FORMULARIO-DESKTOP---------------------*/
   .container--formulario {
-    width: 45%;
+    width: 70%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7vh;
     margin-bottom: auto;
   }
 }
