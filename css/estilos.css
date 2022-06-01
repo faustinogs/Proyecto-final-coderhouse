@@ -91,6 +91,10 @@ body {
           justify-content: flex-end;
 }
 
+.logo-desktop {
+  display: none;
+}
+
 /*---------------------BANER---------------------*/
 .baner {
   display: -webkit-box;
@@ -878,6 +882,12 @@ body {
     gap: 0px 0px;
     grid-auto-flow: row;
         grid-template-areas: "navbar navbar navbar navbar" "baner baner baner baner" "nosotros nosotros nosotros nosotros" "gallery-preview gallery-preview gallery-preview gallery-preview" "visitanos visitanos visitanos visitanos" "footer footer footer footer";
+  }
+  .logo-movile {
+    display: none;
+  }
+  .logo-desktop {
+    display: initial;
   }
   /*---------------------BANER-DESKTOP---------------------*/
   .baner {

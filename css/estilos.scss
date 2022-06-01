@@ -93,6 +93,9 @@ body{
 .navbar-collapse{
     justify-content:flex-end;
 }
+.logo-desktop{
+    display:none;
+}
 
 /*---------------------BANER---------------------*/
 .baner{
@@ -621,6 +624,7 @@ body{
         width: 80%;
     }
 }
+
 @media only screen and (min-width: 920px) {
     .container_index{  
         display: grid;
@@ -636,6 +640,12 @@ body{
             "visitanos visitanos visitanos visitanos"
             "footer footer footer footer";
         } 
+        .logo-movile{
+            display: none;
+        }
+        .logo-desktop{
+            display: initial;
+        }
         /*---------------------BANER-DESKTOP---------------------*/
         .baner{
             display: flex;
