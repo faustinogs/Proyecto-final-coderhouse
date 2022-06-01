@@ -1,0 +1,155 @@
+.body-servicios{
+    background-color: #f8f9fa;
+    width: 100%;
+}
+.cards-servicios{
+    display:grid;
+    padding-top: 12rem;
+    width: 100%;
+}
+.grid-servicios{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: #525252;
+    margin: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicios-fijo{
+    @include servicios-fijo;
+    transition-duration: 1s;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+    min-height: 70vh;
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: #d0d4c8;
+}
+.servicios-fijo h2{
+    text-align: center;
+}
+.imagen-vidriera{
+    min-height: 60%;
+    width: auto;
+    background-image: url(../img/vidriera.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.parrafo-servicios{
+    margin: 0rem .5rem 0rem ;
+    text-align: left;
+}
+.servicios-fijo a{
+    padding-left:.5rem;
+    padding-top:-2rem;
+}
+.servicios-movible{
+    @include servicios-movible;
+    height: 130px;  
+    width: 100%;
+    background-color: #25d36500;
+    background-image: url(../img/onda4.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.grid-servicios1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    color: #525252;
+    margin: 1rem;
+}
+.grid-servicios1:hover > .servicios-fijo1{
+    height: 70vh;
+}
+.servicios-fijo1{
+    @include servicios-fijo;
+    transition-duration: 1s;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+    height: 370px;
+    padding: 10px;
+}
+.servicios-fijo1 h2{
+    text-align: center;
+}
+.imagen-vidriera1{
+    height: 34vh;
+    width: 100%;
+    background-image: url(../img/vidriera.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:10px;
+}
+.parrafo-servicios1{
+    margin-top:1rem;
+}
+.servicios-movible1{
+    @include servicios-movible;
+    height: 130px;
+    background-color: #25d36500;
+    background-image: url(../img/onda4.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition-duration: 1s;
+}
+.grid-servicios2{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    color: #525252;
+    margin: 1rem;
+}
+
+.grid-servicios2:hover > .servicios-fijo2{
+    height: 70vh;
+}
+.servicios-fijo2{
+    @include servicios-fijo;
+    transition-duration: 1s;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+    height: 370px;
+    padding: 10px;
+}
+.servicios-fijo2 h2{
+    text-align: center;
+}
+.imagen-vidriera2{
+    height: 34vh;
+    width: 100%;
+    background-image: url(../img/vidriera.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:10px;
+}
+.parrafo-servicios2{
+    margin-top:1rem;
+}
+.servicios-movible2{
+    @include servicios-movible;
+    height: 130px;
+    background-color: #25d36500;
+    background-image: url(../img/onda4.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition-duration: 1s;
+}
