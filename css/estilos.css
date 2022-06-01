@@ -468,22 +468,6 @@ body {
 }
 
 /*---------------------GALLERIA.HTML---------------------*/
-.baner-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 8rem;
-  width: 100%;
-  height: 25rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url(../img/vidriera-navidad-0-portrait.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
-}
-
 .texto--gallery {
   grid-area: texto--gallery;
   padding-top: 7rem;
@@ -514,7 +498,7 @@ body {
   display: -ms-grid;
   display: grid;
   gap: .9em;
-  margin: 2em 1em;
+  margin: 2em 2em;
 }
 
 .grid__item__gallery, .grid__item__gallery:hover {
@@ -664,201 +648,19 @@ body {
 }
 
 /*---------------------SERVICIOS---------------------*/
-.body-servicios {
-  background-color: #f8f9fa;
+.navbar-servicios {
   width: 100%;
 }
 
-.cards-servicios {
-  display: -ms-grid;
-  display: grid;
-  padding-top: 17rem;
+.carder {
+  padding-top: 12rem;
+  min-height: 80vh;
+  max-height: auto;
   width: 100%;
-  height: 120vh;
-}
-
-.grid-servicios {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  color: #525252;
-  margin: 1rem;
-}
-
-.grid-servicios:hover > .servicios-fijo {
-  height: 70vh;
-}
-
-.servicios-fijo {
-  background-color: #5252522c;
-  height: 9rem;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  overflow: hidden;
-  height: 370px;
-  padding: 10px;
-}
-
-.servicios-fijo h2 {
-  text-align: center;
-}
-
-.imagen-vidriera {
-  height: 34vh;
-  width: 100%;
-  background-image: url(../img/vidriera.jpeg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.parrafo-servicios {
-  margin-top: 1rem;
-}
-
-.servicios-movible {
-  background-color: #f8f9fa;
-  height: 5rem;
-  height: 130px;
-  width: 100%;
-  background-color: #25d36500;
-  background-image: url(../img/onda4.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.grid-servicios1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  color: #525252;
-  margin: 1rem;
-}
-
-.grid-servicios1:hover > .servicios-fijo1 {
-  height: 70vh;
-}
-
-.servicios-fijo1 {
-  background-color: #5252522c;
-  height: 9rem;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  overflow: hidden;
-  height: 370px;
-  padding: 10px;
-}
-
-.servicios-fijo1 h2 {
-  text-align: center;
-}
-
-.imagen-vidriera1 {
-  height: 34vh;
-  width: 100%;
-  background-image: url(../img/vidriera.jpeg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.parrafo-servicios1 {
-  margin-top: 1rem;
-}
-
-.servicios-movible1 {
-  background-color: #f8f9fa;
-  height: 5rem;
-  height: 130px;
-  background-color: #25d36500;
-  background-image: url(../img/onda4.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.grid-servicios2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  color: #525252;
-  margin: 1rem;
-}
-
-.grid-servicios2:hover > .servicios-fijo2 {
-  height: 70vh;
-}
-
-.servicios-fijo2 {
-  background-color: #5252522c;
-  height: 9rem;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  overflow: hidden;
-  height: 370px;
-  padding: 10px;
-}
-
-.servicios-fijo2 h2 {
-  text-align: center;
-}
-
-.imagen-vidriera2 {
-  height: 34vh;
-  width: 100%;
-  background-image: url(../img/vidriera.jpeg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.parrafo-servicios2 {
-  margin-top: 1rem;
-}
-
-.servicios-movible2 {
-  background-color: #f8f9fa;
-  height: 5rem;
-  height: 130px;
-  background-color: #25d36500;
-  background-image: url(../img/onda4.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 /*---------------------MEDIA-DESKTOP---------------------*/
@@ -1114,7 +916,7 @@ body {
   }
   /*---------------------GALERIA-DESKTOP---------------------*/
   .grid__container__gallery {
-    margin: 2rem 5%;
+    margin: 2rem;
   }
   /*---------------------FORMULARIO-DESKTOP---------------------*/
   .container--formulario {
