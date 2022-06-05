@@ -104,7 +104,7 @@ body{
     width: 100%;
     height:25rem;
     justify-content: center;
-    background-image: url(../img/vidriera-navidad-0-portrait.jpg);
+    background-image: url(../img/foto1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
@@ -137,14 +137,7 @@ body{
 .fa-whatsapp{
     margin-top:14px;
 }
-.whatsapp{
-    animation-duration: 2s;
-    animation-name: desplazamiento;
-}
-@keyframes desplazamiento{
-    from{ left: 0%;}
-    to{left: 93%;}
-}
+
 /*---------------------GALLERY_PREVIEW---------------------*/
 .GalleryPreview__grid{
     display: grid;
@@ -169,6 +162,7 @@ body{
 .container__carousel{
     grid-area: carousel;
 }
+
 /*---------------------NOSOTROS---------------------*/
 .nosotros{
     grid-area: nosotros;
@@ -189,20 +183,20 @@ body{
 }
 .nosotros__text__p{
     overflow: auto;
-    text-align:center;
+    text-align:justify;
     font-size: 1.5rem;
     color: $colortexto1;
 }
 /*---------------------VISITANOS---------------------*/
 .visitanos{ 
     grid-area: visitanos; 
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 3.125rem;
+    margin-bottom: 7rem;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 1fr .2fr 1.5fr;
-    gap: 0 6px;
+    gap: 0 0.375rem;
     grid-auto-flow: row;
     grid-template-areas: 
     "visitanos__texto"
@@ -340,7 +334,7 @@ body{
 
 .texto--gallery{
     grid-area: texto--gallery;
-    padding-top: 7rem;
+    padding-top: 12rem;
 }
 .gallery__text{
     @include underlined-text;
@@ -357,7 +351,7 @@ body{
     margin: 2em 2em;
 }
 .grid__item__gallery{
-    min-height: 10em;
+    min-height: 16rem;
     width: auto;
     transition: .5s;
     border-radius: 0.4rem;
@@ -369,63 +363,63 @@ body{
 .img1 {
     grid-column: 1 /3 ;
     grid-row: 1 / 2;
-    background-image: url(../img/vidriera-naviadad-4-portrait.jpg);
+    background-image: url(../img/foto1.jpg);
     background-position:$backposit;
     background-size: $backsize;
 }
 .img2{
     grid-column: 3/4;
     grid-row: 1/3;
-    background-image: url(../img/vidriera-navidad-0-landscape.jpg);
+    background-image: url(../img/foto2.jpg);
     background-size: $backsize;
     background-position:$backposit;
 }
 .img3{
     grid-column: 1/2;
     grid-row: 2/4;
-    background-image: url(../img/vidriera-navidad-0-portrait.jpg);
+    background-image: url(../img/foto3.jpg);
     background-position: $backposit;
     background-size: $backsize;
 }
 .img4{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-image: url(../img/vidriera-navidad-1-landscape.jpg);
+    background-image: url(../img/foto4.jpg);
     background-position: $backposit;
     background-size: $backsize;
 }
 .img5{
     grid-column: 2/4;
     grid-row: 3/4;
-    background-image: url(../img/vidriera-navidad-1-portrait.jpg);
+    background-image: url(../img/foto555.jpg);
     background-position: $backposit;
     background-size: $backsize;
 }
 .img6{
     grid-column:1/3 ;
     grid-row:4/5 ;
-    background-image: url(../img/vidriera-navidad-2-portrait.jpg);
+    background-image: url(../img/foto6.jpg);
     background-position: $backposit;
     background-size: $backsize;
 }
 .img7{
     grid-column:3/4 ;
     grid-row:4/5 ;
-    background-image: url(../img/vidriera-navidad-3-portrait.jpg);
+    background-image: url(../img/foto7.jpg);
     background-position: $backposit;
     background-size: $backsize;
 }
 .img8{
-    grid-column:1/2 ;
+    grid-column:1/3 ;
     grid-row: 5/7 ;
-    background-image: url(../img/vidriera-naviadad-4-portrait.jpg);
-    background-position: $backposit;
+    background-image: url(../img/foto8.jpg);
+    background-position: right;
     background-size: $backsize;
 }
 .img9{
-    grid-column:2/4;
+    grid-column:3/4;
     grid-row:5/7;
-    background-image: url(../img/vidriera-navidad-0-portrait.jpg);
+    background-image: url(../img/foto9.jpg);
     background-position: $backposit;
     background-size: $backsize;
 }
@@ -459,13 +453,23 @@ body{
 }
 .carder{
     padding-top:12rem;
-    min-height: 80vh;
+    min-height: 100vh;
     max-height: auto;
     width: 100%;
     margin:0;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1.5rem;
+    margin-bottom: 5rem;
+}
+.card-ult{
+    padding-bottom: 0;
+}
+.card{
+    height: 100%;
+}
+.btn-primary{
+    margin: 0;
 }
 /*---------------------MEDIA-DESKTOP---------------------*/
 @media only screen and (min-width: 767px){
@@ -505,7 +509,7 @@ body{
             width: 100%;
             height:23rem;
             justify-content: center;
-            background-image: url(../img/vidriera-navidad-1-landscape.jpg);
+            background-image: url(../img/foto1.jpg);
             background-attachment: fixed;
             background-size: cover;
             background-position: bottom;
@@ -576,14 +580,14 @@ body{
             margin: 0 15% ;
         }
         .carousel-inner{
-            height: 25rem;
+            max-height: 80vh;
         }
         
         /*---------------------VISITANOS-DESKTOP---------------------*/
         .visitanos{ 
             grid-area: visitanos; 
             margin-top: 50px;
-            margin-bottom: 100px;
+            margin-bottom: 8rem;
             height: 30em;
             padding: 0 3rem;
             display: grid;
@@ -660,14 +664,15 @@ body{
         .derechos{
             grid-column: 1/4;
             grid-row: 2/3;
-            min-height: 3.5rem;
+            min-height: 4rem;
             background-color: #3d3d3d;
+            margin-top: 2.7rem;
         }
         .derechos-text{
             font-family: map-get($font-style,"estilo4");
             font-size: .8rem;
             padding-left: 3rem;
-            padding-top: 1.2rem;
+            padding-top: 1.5rem;
             line-height: 1.1rem;
         }
         .red-footer{
@@ -689,7 +694,7 @@ body{
 
         /*---------------------GALERIA-DESKTOP---------------------*/
         .grid__container__gallery{
-            margin:2rem ;
+            margin:7rem ;
         }
         /*---------------------FORMULARIO-DESKTOP---------------------*/
         .container--formulario{
